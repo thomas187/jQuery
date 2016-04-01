@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>1. Installazione di jQuery</title>
+        <title>2. La selezione degli elementi con jQuery</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="">
@@ -18,23 +18,24 @@ and open the template in the editor.
 
             jQuery(document).ready(function () {
                 
-                // Questa linea di codice viene eseguita esclusivamente
-                // quando la pagina è stata caricata.
-                jQuery("#obiettivo").text("Hello world");
+                $('#id').text('Il simbolo "#" precede l\'id di un elemento. L\'id deve essere univoco affinchè lo script funzioni.');
                 
-                // Per una maggiore compattezza, possiamo sostituire la voce jQuery con il simbolo $
-                $("#obiettivoDollaro").text("Hello world con il $");
+                $('.classe').text('Il simbolo "." precede la classe di un elemento.');
                 
+                $("p").text('Il selettore può anche contenere il tag di un elemento.');
+ 
             });
 
         </script>
     </head>
     <body>
-        <h1>1. Installazione di jQuery</h1>
+        <h1>2. La selezione degli elementi con jQuery</h1>
         
-        <div id="obiettivo"></div>
+        <div id="id"></div>
         
-        <div id="obiettivoDollaro"></div>
- 
+        <div id="classe"></div>
+        
+        <p></p>
+        
     </body>
 </html>
